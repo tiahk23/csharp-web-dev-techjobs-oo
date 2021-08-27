@@ -53,7 +53,7 @@ namespace TechJobsTests
         public void TestJobsForEachNewLabelAndToBeOnItsOwnNewLine()
         {
             Job job4 = new Job("Product tester", new Employer("ACME"), new Location("desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
-            string testString = "\nID: " + job4.Id + "\nName: " + job4.Name + "\nEmployer: " + job4.EmployerName + "\nLocation: " + job4.EmployerLocation + "\nPosition Type: " + job4.JobType + "\nCore Competency:" + job4.JobCoreCompetency + "\n";
+            string testString = "\nID: " + job4.Id + "\nName: " + job4.Name + "\nEmployer: " + job4.EmployerName + "\nLocation: " + job4.EmployerLocation + "\nPosition Type: " + job4.JobType + "\nCore Competency: " + job4.JobCoreCompetency + "\n";
             string newString = job4.ToString();
             Assert.AreEqual(testString, newString);
         }

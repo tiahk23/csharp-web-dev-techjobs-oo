@@ -51,21 +51,21 @@ namespace TechJobsOO
             
                 if (EmployerName.Value == "" || EmployerName.Value == null)
                 {
-                    return EmployerName.Value = "Data not avalible";
+                    EmployerName.Value = "Data not avalible";
                 }
                 if (EmployerLocation.Value == "" || EmployerLocation.Value == null)
                 {
-                    return EmployerLocation.Value = "Data not avalible";
+                    EmployerLocation.Value = "Data not avalible";
                 }
                 if (JobType.Value == "" || JobType.Value == null)
                 {
-                    return JobType.Value = "Data not avalible";
+                    JobType.Value = "Data not avalible";
                 }
                 if (JobCoreCompetency.Value == "" || JobCoreCompetency.Value == null)
                 {
-                    return JobCoreCompetency.Value = "Data not avalible";
+                    JobCoreCompetency.Value = "Data not avalible";
                 }
-                return "\nID: " + Id + "\nName: " + Name + "\nEmployer: " + EmployerName.Value + "\nLocation: " + EmployerLocation.Value + "\nPosition Type: " + JobType.Value + "\nCore Competency:" + JobCoreCompetency.Value + "\n";
+                return "\nID: " + Id + "\nName: " + Name + "\nEmployer: " + EmployerName.Value + "\nLocation: " + EmployerLocation.Value + "\nPosition Type: " + JobType.Value + "\nCore Competency: " + JobCoreCompetency.Value + "\n";
             
         }
     }
